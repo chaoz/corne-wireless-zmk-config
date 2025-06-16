@@ -101,10 +101,10 @@
         navigation_layer {
             display-name = "Navigation";
             bindings = <
-&sys_reset   &none  &none  &none     &none   &none        &none    &none         &none     &none          &none  &sys_reset
-&bootloader  &none  &none  &none     &none   &none        &none    &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &none  &bootloader
-&none        &none  &none  &none     &none   &none        &none    &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
-                           &kp LGUI  &trans  &kp SPACE    &kp RET  &trans        &kp RALT
+&sys_reset   &none  &none  &none     &none   &kp LC(LA(F1))    &kp LS(F12)  &none         &none     &none          &none  &sys_reset
+&bootloader  &none  &none  &none     &none   &none             &none        &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &none  &bootloader
+&none        &none  &none  &none     &none   &none             &none        &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
+                           &kp LGUI  &trans  &kp SPACE         &kp RET      &trans        &kp RALT
             >;
         };
 
