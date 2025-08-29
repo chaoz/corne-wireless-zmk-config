@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LAYER4_WINKEY";
             #binding-cells = <0>;
-            bindings = <&mo 4>, <&kp LEFT_WIN>;
+            bindings = <&lt 4 LEFT_WIN>, <&kp LEFT_WIN>;
         };
     };
 
