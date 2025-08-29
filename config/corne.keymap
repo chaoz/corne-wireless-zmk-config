@@ -43,6 +43,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        td_layer4_winkey: td_layer4_winkey {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LAYER4_WINKEY";
+            #binding-cells = <0>;
+            bindings = <&mo 4>, <&kp LEFT_WIN>;
+        };
     };
 
     keymap {
@@ -60,7 +67,7 @@
 &kp TAB    &kp Q  &kp W  &kp E                &kp R          &kp T              &kp Y            &kp U         &kp I                &kp O    &kp P     &kp BSPC
 &kp LCTRL  &kp A  &kp S  &hml LEFT_CONTROL D  &hml LSHIFT F  &hml LEFT_ALT G    &hmr LEFT_ALT H  &hmr LSHFT J  &hmr LEFT_CONTROL K  &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C                &kp V          &kp B              &kp N            &kp M         &kp COMMA            &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI             &mo 1          &kp SPACE          &kp RET          &mo 2         &kp RALT
+                         &td_layer4_winkey    &mo 1          &kp SPACE          &kp RET          &mo 2         &kp RALT
             >;
         };
 
@@ -106,10 +113,13 @@
             >;
         };
 
-        extra_1 { status = "reserved"; };
-
-        extra_2 { status = "reserved"; };
-
-        extra_3 { status = "reserved"; };
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_7  &kp NUMBER_8  &kp N9        &trans     &kp RC(W)
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RC(P)  &kp RC(Q)
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &trans
+                        &trans  &trans  &trans    &trans  &trans        &kp NUMBER_0
+            >;
+        };
     };
 };
