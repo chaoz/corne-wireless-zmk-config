@@ -51,7 +51,7 @@
 &kp TAB    &kp Q  &kp W  &kp E                &kp R          &kp T              &kp Y            &kp U         &kp I                &kp O    &kp P     &kp BSPC
 &kp LCTRL  &kp A  &kp S  &hml LEFT_CONTROL D  &hml LSHIFT F  &hml LEFT_ALT G    &hmr LEFT_ALT H  &hmr LSHFT J  &hmr LEFT_CONTROL K  &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C                &kp V          &kp B              &kp N            &kp M         &kp COMMA            &kp DOT  &kp FSLH  &kp ESC
-                         &mo 5                &mo 1          &kp SPACE          &kp RET          &mo 2         &kp RALT
+                         &none                &mo 1          &kp SPACE          &kp RET          &mo 2         &kp RALT
             >;
         };
 
@@ -92,28 +92,8 @@
             bindings = <
 &sys_reset   &kp F13  &kp F14  &kp F15  &kp F16  &kp LC(LA(F1))    &kp LS(F12)  &none         &none     &none          &none  &sys_reset
 &bootloader  &kp F17  &kp F18  &kp F19  &kp F20  &none             &none        &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &none  &bootloader
-&none        &kp F21  &kp F22  &kp F23  &kp F24  &mo 4             &none        &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
+&none        &kp F21  &kp F22  &kp F23  &kp F24  &none             &none        &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
                                &trans   &trans   &kp SPACE         &kp RET      &trans        &kp RALT
-            >;
-        };
-
-        numpad_layer {
-            display-name = "Numpad";
-            bindings = <
-&none         &none  &none  &none   &none  &none        &none      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none      &kp RC(W)
-&none         &none  &none  &none   &none  &none        &none      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RC(P)  &kp RC(Q)
-&kp LEFT_GUI  &none  &none  &none   &none  &none        &none      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none      &trans
-                            &trans  &none  &kp SPACE    &kp ENTER  &none         &kp NUMBER_0
-            >;
-        };
-
-        layer_5 {
-            display-name = "Test";
-            bindings = <
-&trans    &trans  &trans  &trans  &trans  &trans       &trans     &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans    &trans  &trans  &trans  &trans  &trans       &trans     &kp N4  &kp N5  &kp N6  &trans  &trans
-&kp LGUI  &trans  &trans  &trans  &trans  &trans       &trans     &kp N1  &kp N2  &kp N3  &trans  &trans
-                          &trans  &trans  &kp SPACE    &kp ENTER  &trans  &kp N0
             >;
         };
     };
