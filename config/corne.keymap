@@ -107,14 +107,13 @@
         };
 
         numpad_layer {
+            display-name = "Numpad";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_7  &kp NUMBER_8  &kp N9        &none      &kp RC(W)
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RC(P)  &kp RC(Q)
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none      &trans
                         &trans  &trans  &trans    &trans  &trans        &kp NUMBER_0
             >;
-
-            label = "Numpad";
         };
     };
 };
